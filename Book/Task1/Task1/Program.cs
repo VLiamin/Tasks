@@ -13,6 +13,7 @@ namespace Task1
                 b += 100; // Это выражение проверяется на переполнение
                 Console.WriteLine(b);
             }
+            Console.WriteLine("dksdkjd");
             
         }   
         public static void PromoteEmployee(Object o)
