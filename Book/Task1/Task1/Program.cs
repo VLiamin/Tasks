@@ -10,7 +10,7 @@ namespace Task1
             checked
             { // Начало проверяемого блока
                 Byte b = 100;
-                b += 200; // Это выражение проверяется на переполнение
+                b += 100; // Это выражение проверяется на переполнение
             }
         }
         public static void PromoteEmployee(Object o)
