@@ -8,6 +8,7 @@ namespace Task1
         {
             Console.WriteLine("Hello World!");
             Console.WriteLine("fjfjjf");
+            Console.WriteLine(3 + 5);
         }
     }
 }
