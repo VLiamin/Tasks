@@ -4,7 +4,7 @@ image: Visual Studio 2019
 environment:
   
   matrix:
-  - solution_path: Tablet.sln
+  - solution_path: Book/Task1/Task1.sln
   
 before_build:
   - nuget restore %solution_path%
