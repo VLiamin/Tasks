@@ -7,8 +7,6 @@ namespace Task1
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.WriteLine("fjfjjf");
-            Console.WriteLine(3 + 5);
         }
     }
 }
