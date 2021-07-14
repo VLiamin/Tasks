@@ -113,6 +113,8 @@ namespace Homework1
                 case "5":
                     Console.WriteLine("Result: " + mathematicOperations.ToPow(firstNumber, secondNumber));
                     break;
+                default:
+                    break;
             }
         }
 

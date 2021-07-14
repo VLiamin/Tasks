@@ -27,9 +27,13 @@ namespace Homework1
         public double Divide(double x, double y)
         {
             if (y != 0)
+            {
                 return x / y;
+            }
             else
+            {
                 throw new DivideByZeroException();
+            }
         }
 
         public double ToPow(double x, double y)
