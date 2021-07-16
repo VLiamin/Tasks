@@ -5,6 +5,7 @@ environment:
   
   matrix:
   - solution_path: Book/Task1/Task1.sln
+  - solution_path: Lanit/Homework1/Homework1.sln
   
 before_build:
   - nuget restore %solution_path%
