@@ -78,10 +78,10 @@ namespace Homework1
         private static void WorkWithNumbers(MathematicOperations mathematicOperations)
         {
             Console.Write("Write first number: ");
-            double firstNumber = Convert.ToInt32(Console.ReadLine());
+            double firstNumber = Convert.ToDouble(Console.ReadLine());
 
             Console.Write("Write second number: ");
-            double secondNumber = Convert.ToInt32(Console.ReadLine());
+            double secondNumber = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("1 - Multiply numbers \n2 - " +
             "Subtract numbers \n3 - Sum numbers \n4 - Divide numbers"
