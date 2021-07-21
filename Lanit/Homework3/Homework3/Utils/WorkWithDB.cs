@@ -13,9 +13,9 @@ namespace Homework3.Utils
     /// </summary>
     public class WorkWithDB
     {
-        private SqlConnection sqlConn;
+        private readonly SqlConnection sqlConn;
         private static string rep = Environment.NewLine;
-        private Print print;
+        private readonly Print print;
 
         public WorkWithDB(SqlConnection sqlConn)
         {
