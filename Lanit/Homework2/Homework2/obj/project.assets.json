@@ -1,0 +1,134 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "FilesLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "PrintAndReadLibrary": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FilesLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FilesLibrary.dll": {}
+        }
+      },
+      "ParsingLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "PrintAndReadLibrary": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ParsingLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ParsingLibrary.dll": {}
+        }
+      },
+      "PrintAndReadLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/PrintAndReadLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PrintAndReadLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FilesLibrary/1.0.0": {
+      "type": "project",
+      "path": "../FilesLibrary/FilesLibrary.csproj",
+      "msbuildProject": "../FilesLibrary/FilesLibrary.csproj"
+    },
+    "ParsingLibrary/1.0.0": {
+      "type": "project",
+      "path": "../Parsing/ParsingLibrary.csproj",
+      "msbuildProject": "../Parsing/ParsingLibrary.csproj"
+    },
+    "PrintAndReadLibrary/1.0.0": {
+      "type": "project",
+      "path": "../PrintAndRead/PrintAndReadLibrary.csproj",
+      "msbuildProject": "../PrintAndRead/PrintAndReadLibrary.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "FilesLibrary >= 1.0.0",
+      "ParsingLibrary >= 1.0.0",
+      "PrintAndReadLibrary >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Lyami\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Lyami\\Tasks\\Lanit\\Homework2\\Homework2\\Homework2.csproj",
+      "projectName": "Homework2",
+      "projectPath": "C:\\Users\\Lyami\\Tasks\\Lanit\\Homework2\\Homework2\\Homework2.csproj",
+      "packagesPath": "C:\\Users\\Lyami\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lyami\\Tasks\\Lanit\\Homework2\\Homework2\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Lyami\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {
+            "C:\\Users\\Lyami\\Tasks\\Lanit\\Homework2\\FilesLibrary\\FilesLibrary.csproj": {
+              "projectPath": "C:\\Users\\Lyami\\Tasks\\Lanit\\Homework2\\FilesLibrary\\FilesLibrary.csproj"
+            },
+            "C:\\Users\\Lyami\\Tasks\\Lanit\\Homework2\\Parsing\\ParsingLibrary.csproj": {
+              "projectPath": "C:\\Users\\Lyami\\Tasks\\Lanit\\Homework2\\Parsing\\ParsingLibrary.csproj"
+            },
+            "C:\\Users\\Lyami\\Tasks\\Lanit\\Homework2\\PrintAndRead\\PrintAndReadLibrary.csproj": {
+              "projectPath": "C:\\Users\\Lyami\\Tasks\\Lanit\\Homework2\\PrintAndRead\\PrintAndReadLibrary.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

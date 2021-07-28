@@ -1,0 +1,35 @@
+﻿@model ProductsListViewModel
+
+<div class="text-center">
+    <h1 class="display-4">Имеющиеся книги в магазине</h1>
+
+    <table class="table">
+        <tr><td>Название</td><td>Автор</td></tr>
+        @foreach (var item in Model.MainModel.ProductsModel)
+
+        {
+            <tr>
+                <td><a class="" asp-controller="Home" asp-action="GetInformation" asp-route-id="@item.Id">@item.Name</a></td>
+                <td>@item.Author</td>
+                <td>
+                    <form method="post">
+                        <button type="submit" asp-controller="Home" asp-action="AddToBasket" asp-route-id="@item.Id">
+                            В корзину
+                        </button>
+                    </form>
+                </td>
+
+            </tr>
+        }
+    </table>
+
+    @using (Html.BeginForm("FindBook", "Home"))
+    {
+        <p>
+            Поиск по названию книги:
+            <input type="text" id="ss" name="name" value="Введите название книги" />
+            <input type="submit" value="Изменить" style="display:none;" />
+        </p>
+    }
+
+</div>

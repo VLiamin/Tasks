@@ -1,0 +1,5 @@
+﻿{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=LAPTOP-QQUBGIB1\\SQLEXPRESS01;Database=Homework4;Trusted_Connection=True;"
+  }
+}

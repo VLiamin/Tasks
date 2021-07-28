@@ -1,0 +1,15 @@
+C:\Users\Lyami\Tasks\Lanit\Homework2\Parsing\bin\Debug\net5.0\ParsingLibrary.deps.json
+C:\Users\Lyami\Tasks\Lanit\Homework2\Parsing\bin\Debug\net5.0\ParsingLibrary.dll
+C:\Users\Lyami\Tasks\Lanit\Homework2\Parsing\bin\Debug\net5.0\ref\ParsingLibrary.dll
+C:\Users\Lyami\Tasks\Lanit\Homework2\Parsing\bin\Debug\net5.0\ParsingLibrary.pdb
+C:\Users\Lyami\Tasks\Lanit\Homework2\Parsing\bin\Debug\net5.0\PrintAndReadLibrary.dll
+C:\Users\Lyami\Tasks\Lanit\Homework2\Parsing\bin\Debug\net5.0\PrintAndReadLibrary.pdb
+C:\Users\Lyami\Tasks\Lanit\Homework2\Parsing\obj\Debug\net5.0\ParsingLibrary.csproj.AssemblyReference.cache
+C:\Users\Lyami\Tasks\Lanit\Homework2\Parsing\obj\Debug\net5.0\ParsingLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lyami\Tasks\Lanit\Homework2\Parsing\obj\Debug\net5.0\ParsingLibrary.AssemblyInfoInputs.cache
+C:\Users\Lyami\Tasks\Lanit\Homework2\Parsing\obj\Debug\net5.0\ParsingLibrary.AssemblyInfo.cs
+C:\Users\Lyami\Tasks\Lanit\Homework2\Parsing\obj\Debug\net5.0\ParsingLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Lyami\Tasks\Lanit\Homework2\Parsing\obj\Debug\net5.0\ParsingLibrary.csproj.CopyComplete
+C:\Users\Lyami\Tasks\Lanit\Homework2\Parsing\obj\Debug\net5.0\ParsingLibrary.dll
+C:\Users\Lyami\Tasks\Lanit\Homework2\Parsing\obj\Debug\net5.0\ref\ParsingLibrary.dll
+C:\Users\Lyami\Tasks\Lanit\Homework2\Parsing\obj\Debug\net5.0\ParsingLibrary.pdb

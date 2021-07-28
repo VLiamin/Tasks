@@ -1,0 +1,16 @@
+C:\Users\Lyami\Tasks\Lanit\Homework1\Homework1\bin\Debug\net5.0\Homework1.exe
+C:\Users\Lyami\Tasks\Lanit\Homework1\Homework1\bin\Debug\net5.0\Homework1.deps.json
+C:\Users\Lyami\Tasks\Lanit\Homework1\Homework1\bin\Debug\net5.0\Homework1.runtimeconfig.json
+C:\Users\Lyami\Tasks\Lanit\Homework1\Homework1\bin\Debug\net5.0\Homework1.runtimeconfig.dev.json
+C:\Users\Lyami\Tasks\Lanit\Homework1\Homework1\bin\Debug\net5.0\Homework1.dll
+C:\Users\Lyami\Tasks\Lanit\Homework1\Homework1\bin\Debug\net5.0\ref\Homework1.dll
+C:\Users\Lyami\Tasks\Lanit\Homework1\Homework1\bin\Debug\net5.0\Homework1.pdb
+C:\Users\Lyami\Tasks\Lanit\Homework1\Homework1\obj\Debug\net5.0\Homework1.csproj.AssemblyReference.cache
+C:\Users\Lyami\Tasks\Lanit\Homework1\Homework1\obj\Debug\net5.0\Homework1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lyami\Tasks\Lanit\Homework1\Homework1\obj\Debug\net5.0\Homework1.AssemblyInfoInputs.cache
+C:\Users\Lyami\Tasks\Lanit\Homework1\Homework1\obj\Debug\net5.0\Homework1.AssemblyInfo.cs
+C:\Users\Lyami\Tasks\Lanit\Homework1\Homework1\obj\Debug\net5.0\Homework1.csproj.CoreCompileInputs.cache
+C:\Users\Lyami\Tasks\Lanit\Homework1\Homework1\obj\Debug\net5.0\Homework1.dll
+C:\Users\Lyami\Tasks\Lanit\Homework1\Homework1\obj\Debug\net5.0\ref\Homework1.dll
+C:\Users\Lyami\Tasks\Lanit\Homework1\Homework1\obj\Debug\net5.0\Homework1.pdb
+C:\Users\Lyami\Tasks\Lanit\Homework1\Homework1\obj\Debug\net5.0\Homework1.genruntimeconfig.cache
