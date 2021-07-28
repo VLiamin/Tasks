@@ -1,0 +1,64 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Homework2/1.0.0": {
+        "dependencies": {
+          "FilesLibrary": "1.0.0",
+          "ParsingLibrary": "1.0.0",
+          "PrintAndReadLibrary": "1.0.0"
+        },
+        "runtime": {
+          "Homework2.dll": {}
+        }
+      },
+      "FilesLibrary/1.0.0": {
+        "dependencies": {
+          "PrintAndReadLibrary": "1.0.0"
+        },
+        "runtime": {
+          "FilesLibrary.dll": {}
+        }
+      },
+      "ParsingLibrary/1.0.0": {
+        "dependencies": {
+          "PrintAndReadLibrary": "1.0.0"
+        },
+        "runtime": {
+          "ParsingLibrary.dll": {}
+        }
+      },
+      "PrintAndReadLibrary/1.0.0": {
+        "runtime": {
+          "PrintAndReadLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Homework2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FilesLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ParsingLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PrintAndReadLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

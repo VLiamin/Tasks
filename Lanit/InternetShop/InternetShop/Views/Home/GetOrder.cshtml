@@ -1,0 +1,17 @@
+﻿@model ProductsListViewModel
+
+<div class="text-center">
+    <h1 class="display-4">Ваша покупка</h1>
+
+    <table class="table">
+        <tr><td>Название</td><td>Количество</td></tr>
+        @foreach (var item in Model.MainModel.OrdersModel)
+        {
+            <tr>
+                <td>@Model.MainModel.GetNameById(item.ProductId)</td>
+                <td>@item.Count</td>
+            </tr>
+        }
+    </table>
+
+</div>

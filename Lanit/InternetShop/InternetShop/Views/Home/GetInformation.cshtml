@@ -1,0 +1,25 @@
+﻿@model ProductsListViewModel
+
+<div class="text-center">
+    <h1 class="display-4">Подробная информация</h1>
+
+    <table class="table">
+        <tr><td>Название</td><td>Автор</td><td>Количество страниц</td><td>Стоимость</td><td>Вес, г</td></tr>
+
+        <tr>
+            <td>@ProductsListViewModel.Product.Name</td>
+            <td>@ProductsListViewModel.Product.Author</td>
+            <td>@ProductsListViewModel.Product.NumberOfPages</td>
+            <td>@ProductsListViewModel.Product.Cost</td>
+            <td>@ProductsListViewModel.Product.Weight</td>
+        </tr>
+    </table>
+
+    <p>
+        <form method="post">
+            <button type="submit" asp-controller="Home" asp-action="AddToBasket" asp-route-id="@ProductsListViewModel.Product.Id">
+                В корзину
+            </button>
+        </form>
+    </p>
+</div>
