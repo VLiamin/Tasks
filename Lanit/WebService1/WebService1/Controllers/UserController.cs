@@ -1,10 +1,9 @@
 ﻿using MassTransit;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Models.Answers;
+using Models.Questions;
+using WebService1.Commands.Interfaces;
 using WebService1.Models;
 
 namespace WebService1.Controllers
@@ -14,20 +13,28 @@ namespace WebService1.Controllers
     public class UserController : ControllerBase
     {
         private readonly ILogger<UserController> _logger;
+        private readonly IGetUserCommand getUserCommand;
+        private readonly IDeleteUserCommand deleteUserCommand;
+        private readonly IAddUserCommand addUserCommand;
+        private readonly IGetAllUsersCommand getAllUsersCommand;
 
-        public UserController(ILogger<UserController> logger)
+        public UserController(ILogger<UserController> logger, IGetUserCommand getUserCommand,
+            IDeleteUserCommand deleteUserCommand, IAddUserCommand addUserCommand,
+            IGetAllUsersCommand getAllUsersCommand)
         {
             _logger = logger;
+            this.getUserCommand = getUserCommand;
+            this.deleteUserCommand = deleteUserCommand;
+            this.addUserCommand = addUserCommand;
+            this.getAllUsersCommand = getAllUsersCommand;
         }
 
         [HttpGet("getUser")]
-        public User GetUser([FromQuery] int Id, 
-            [FromServices] IRequestClient<Question> requestClient)
+        public GetAnswer GetUser([FromQuery] int Id)
         {
             _logger.LogInformation("get user '{id}'", Id);
-            Response<User> response = requestClient.GetResponse<User>(
-                new Question { Id = Id }).Result;
-            return response.Message;
+
+            return getUserCommand.Execute(Id);
         }
 
         [HttpDelete("deleteUser")]
@@ -35,11 +42,25 @@ namespace WebService1.Controllers
             [FromServices] IRequestClient<DeleteQuestion> requestClient)
         {
             _logger.LogInformation("delete user '{id}'", Id);
-            Response<DeleteAnswer> response = requestClient.GetResponse<DeleteAnswer>(
-                new DeleteQuestion { Id = Id }).Result;
-            return response.Message;
+            
+            return deleteUserCommand.Execute(Id);
+        }
+
+        [HttpPost("addUser")]
+        public AddAnswer AddUser([FromBody] AddQuestion addQuestion,
+            [FromServices] IRequestClient<AddQuestion> requestClient)
+        {
+            _logger.LogInformation("get user '{user}'", addQuestion);
+            
+            return addUserCommand.Execute(addQuestion);
+        }
+
+        [HttpGet("getAllUsers")]
+        public GetAllAnswer GetAllUsers([FromServices] IRequestClient<GetAllQuestion> requestClient)
+        {
+            _logger.LogInformation("get user '{id}'");
+            
+            return getAllUsersCommand.Execute();
         }
     }
-
-
 }

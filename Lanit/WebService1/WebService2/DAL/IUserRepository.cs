@@ -8,9 +8,9 @@ namespace WebService2.DAL
 {
     public interface IUserRepository
     {
-        void AddUser(User user);
+        string AddUser(User user);
         string DeleteUser(int Id);
-        void GetAllUsers();
+        List<User> GetAllUsers();
         User GetUser(int Id);
     }
 }

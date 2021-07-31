@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace WebService1.Models
 {
-    public class Question
+    public class GetQuestion
     {
         public int Id { get; set; }
     }

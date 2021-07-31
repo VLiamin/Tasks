@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using WebService1.Models;
 
@@ -15,9 +16,19 @@ namespace WebService2.DAL
             this.myDbContext = myDbContext;
         }
 
-        public void AddUser(User user)
+        public string AddUser(User user)
         {
-            throw new NotImplementedException();
+            var result = myDbContext.Users
+                    .Where(b => b.Id == user.Id).FirstOrDefault();
+
+            if (result != null)
+            {
+                return "This elelment is exists";
+            }
+
+            myDbContext.Users.Add(user);
+            myDbContext.SaveChanges();
+            return "Succes";
         }
 
         public string DeleteUser(int Id)
@@ -33,9 +44,11 @@ namespace WebService2.DAL
             return "Succes";
         }
 
-        public void GetAllUsers()
+        public List<User> GetAllUsers()
         {
-            throw new NotImplementedException();
+            List<User> users = myDbContext.Users.ToList();
+            
+            return users;
         }
 
         public User GetUser(int Id)

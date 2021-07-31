@@ -5,22 +5,26 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebService1.Models;
 using WebService2.DAL;
+using WebService2.Mappers.Interfaces;
 
 namespace WebService2.Consumer
 {
     public class DeleteConsumer : IConsumer<DeleteQuestion>
     {
         private readonly IUserRepository userRepository;
-        public DeleteConsumer(IUserRepository userRepository)
+        private readonly IDeleteAnswerMapper deleteAnswerMapper;
+
+        public DeleteConsumer(IUserRepository userRepository, IDeleteAnswerMapper deleteAnswerMapper)
         {
             this.userRepository = userRepository;
+            this.deleteAnswerMapper = deleteAnswerMapper;
         }
         public async Task Consume(ConsumeContext<DeleteQuestion> context)
         {
             
             string result = userRepository.DeleteUser(context.Message.Id);
-            DeleteAnswer deleteAnswer = new DeleteAnswer { Answer = result };
-            await context.RespondAsync<DeleteAnswer>(deleteAnswer);
+            
+            await context.RespondAsync<DeleteAnswer>(deleteAnswerMapper.Map(result));
         }
     }
 }

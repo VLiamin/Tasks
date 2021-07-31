@@ -1,20 +1,14 @@
 using MassTransit;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using WebService2.Consumer;
 using WebService2.DAL;
+using WebService2.Mappers;
+using WebService2.Mappers.Interfaces;
 
 namespace WebService2
 {
@@ -50,17 +44,33 @@ namespace WebService2
                             ep.ConfigureConsumer<DeleteConsumer>(context);
 
                         });
+                        cfg.ReceiveEndpoint("add", ep =>
+                        {
+                            ep.ConfigureConsumer<AddConsumer>(context);
+
+                        });
+                        cfg.ReceiveEndpoint("getAll", ep =>
+                        {
+                            ep.ConfigureConsumer<GetAllConsumer>(context);
+
+                        });
+
                     });
 
                     busConfigurator.AddConsumer<DeleteConsumer>();
                     busConfigurator.AddConsumer<GetConsumer>();
-
+                    busConfigurator.AddConsumer<AddConsumer>();
+                    busConfigurator.AddConsumer<GetAllConsumer>();
                 });
 
             services.AddMassTransitHostedService();
             services.AddControllers();
             services.AddDbContext<MyDbContext>(options => options.UseSqlServer("Server=LAPTOP-QQUBGIB1\\SQLEXPRESS01;Database=Homework6;Trusted_Connection=True;"));
             services.AddTransient<IUserRepository, UserRepository>();
+            services.AddTransient<IGetAnswerMapper, GetAnswerMapper>();
+            services.AddTransient<IDeleteAnswerMapper, DeleteAnswerMapper>();
+            services.AddTransient<IGetAllAnswerMapper, GetAllAnswerMapper>();
+            services.AddTransient<IAddAnswerMapper, AddAnswerMapper>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
