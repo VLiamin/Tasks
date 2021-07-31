@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebService2.Consumer;
+using WebService2.DAL;
 
 namespace WebService2
 {
@@ -39,22 +40,34 @@ namespace WebService2
                             host.Username("WebService2");
                             host.Password("123");
                         });
-                        cfg.ReceiveEndpoint("xyz", ep =>
+                        cfg.ReceiveEndpoint("get", ep =>
                         {
                             ep.ConfigureConsumer<GetConsumer>(context);
+
+                        });
+                        cfg.ReceiveEndpoint("delete", ep =>
+                        {
+                            ep.ConfigureConsumer<DeleteConsumer>(context);
+
                         });
                     });
+
+                    busConfigurator.AddConsumer<DeleteConsumer>();
                     busConfigurator.AddConsumer<GetConsumer>();
+
                 });
 
             services.AddMassTransitHostedService();
             services.AddControllers();
             services.AddDbContext<MyDbContext>(options => options.UseSqlServer("Server=LAPTOP-QQUBGIB1\\SQLEXPRESS01;Database=Homework6;Trusted_Connection=True;"));
+            services.AddTransient<IUserRepository, UserRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, MyDbContext myDbContext)
         {
+            myDbContext.Database.Migrate();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

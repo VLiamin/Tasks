@@ -6,12 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.OpenApi.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using WebService1.Models;
 
 namespace WebService1
@@ -41,7 +36,10 @@ namespace WebService1
                     });
 
                     busConfigurator.AddRequestClient<Question>(
-                        new Uri("rabbitmq://localhost/xyz"),
+                        new Uri("rabbitmq://localhost/get"),
+                        RequestTimeout.After(s: 5));
+                    busConfigurator.AddRequestClient<DeleteQuestion>(
+                        new Uri("rabbitmq://localhost/delete"),
                         RequestTimeout.After(s: 5));
                 });
 

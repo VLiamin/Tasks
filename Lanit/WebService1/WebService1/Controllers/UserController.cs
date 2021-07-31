@@ -26,7 +26,17 @@ namespace WebService1.Controllers
         {
             _logger.LogInformation("get user '{id}'", Id);
             Response<User> response = requestClient.GetResponse<User>(
-                new Question { Id = 1 }).Result;
+                new Question { Id = Id }).Result;
+            return response.Message;
+        }
+
+        [HttpDelete("deleteUser")]
+        public DeleteAnswer DeleteUser([FromQuery] int Id,
+            [FromServices] IRequestClient<DeleteQuestion> requestClient)
+        {
+            _logger.LogInformation("delete user '{id}'", Id);
+            Response<DeleteAnswer> response = requestClient.GetResponse<DeleteAnswer>(
+                new DeleteQuestion { Id = Id }).Result;
             return response.Message;
         }
     }

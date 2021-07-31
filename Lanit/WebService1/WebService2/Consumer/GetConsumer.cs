@@ -1,17 +1,23 @@
 ﻿using MassTransit;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using WebService1.Models;
+using WebService2.DAL;
 
 namespace WebService2.Consumer
 {
     public class GetConsumer : IConsumer<Question>
     {
+        private readonly IUserRepository userRepository;
+        public GetConsumer(IUserRepository userRepository)
+        {
+            this.userRepository = userRepository;
+        }
+
         public async Task Consume(ConsumeContext<Question> context)
         {
-            await context.RespondAsync<User>(new User { Id = 1, Name = "Vova"});
+            User user = userRepository.GetUser(context.Message.Id);
+            await context.RespondAsync<User>(user);
         }
     }
 }
