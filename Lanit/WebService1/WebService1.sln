@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebService1", "WebService1\WebService1.csproj", "{7C83D819-4543-4296-A3EC-9B8EF0DC08D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebService2", "WebService2\WebService2.csproj", "{32D3F868-839F-4B70-996A-BD6CDC9F12E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{52470069-6DBC-4C83-BDF6-D4B80D2D1D3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C83D819-4543-4296-A3EC-9B8EF0DC08D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C83D819-4543-4296-A3EC-9B8EF0DC08D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C83D819-4543-4296-A3EC-9B8EF0DC08D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C83D819-4543-4296-A3EC-9B8EF0DC08D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32D3F868-839F-4B70-996A-BD6CDC9F12E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32D3F868-839F-4B70-996A-BD6CDC9F12E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32D3F868-839F-4B70-996A-BD6CDC9F12E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32D3F868-839F-4B70-996A-BD6CDC9F12E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52470069-6DBC-4C83-BDF6-D4B80D2D1D3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52470069-6DBC-4C83-BDF6-D4B80D2D1D3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52470069-6DBC-4C83-BDF6-D4B80D2D1D3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52470069-6DBC-4C83-BDF6-D4B80D2D1D3E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F0015DC-68EB-42DA-ABE6-00D1AF4CABA2}
+	EndGlobalSection
+EndGlobal
