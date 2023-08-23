@@ -1,0 +1,32 @@
+﻿@model ProductsListViewModel
+
+<div class="text-center">
+    <h1 class="display-4">Корзина товаров</h1>
+    <table class="table">
+        <tr><td>Название</td><td>Количество</td></tr>
+        @foreach (var item in Model.MainModel.ProductInBasket)
+        {
+            <tr>
+                <td>@Model.MainModel.GetNameById(item.ProductId)</td>
+                <td>@item.Count</td>
+                <td>
+                    <form method="post">
+                        <button type="submit" asp-controller="Home" asp-action="DeleteFromBasket" asp-route-id="@item.ProductId">
+                            Убрать
+                        </button>
+                    </form>
+                </td>
+
+            </tr>
+        }
+    </table>
+    <p>
+        <form method="post">
+            <strong>
+                Итоговая цена: @ProductsListViewModel.Cost
+                <button type="submit" asp-controller="Home" asp-action="GetOrder">
+                    Купить
+                </button>
+        </form>
+    </p>
+</div>

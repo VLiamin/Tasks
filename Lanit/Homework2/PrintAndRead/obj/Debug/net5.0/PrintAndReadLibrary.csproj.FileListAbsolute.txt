@@ -1,0 +1,12 @@
+C:\Users\Lyami\Tasks\Lanit\Homework2\PrintAndRead\bin\Debug\net5.0\PrintAndReadLibrary.deps.json
+C:\Users\Lyami\Tasks\Lanit\Homework2\PrintAndRead\bin\Debug\net5.0\PrintAndReadLibrary.dll
+C:\Users\Lyami\Tasks\Lanit\Homework2\PrintAndRead\bin\Debug\net5.0\ref\PrintAndReadLibrary.dll
+C:\Users\Lyami\Tasks\Lanit\Homework2\PrintAndRead\bin\Debug\net5.0\PrintAndReadLibrary.pdb
+C:\Users\Lyami\Tasks\Lanit\Homework2\PrintAndRead\obj\Debug\net5.0\PrintAndReadLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lyami\Tasks\Lanit\Homework2\PrintAndRead\obj\Debug\net5.0\PrintAndReadLibrary.AssemblyInfoInputs.cache
+C:\Users\Lyami\Tasks\Lanit\Homework2\PrintAndRead\obj\Debug\net5.0\PrintAndReadLibrary.AssemblyInfo.cs
+C:\Users\Lyami\Tasks\Lanit\Homework2\PrintAndRead\obj\Debug\net5.0\PrintAndReadLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Lyami\Tasks\Lanit\Homework2\PrintAndRead\obj\Debug\net5.0\PrintAndReadLibrary.dll
+C:\Users\Lyami\Tasks\Lanit\Homework2\PrintAndRead\obj\Debug\net5.0\ref\PrintAndReadLibrary.dll
+C:\Users\Lyami\Tasks\Lanit\Homework2\PrintAndRead\obj\Debug\net5.0\PrintAndReadLibrary.pdb
+C:\Users\Lyami\Tasks\Lanit\Homework2\PrintAndRead\obj\Debug\net5.0\PrintAndReadLibrary.csproj.AssemblyReference.cache
